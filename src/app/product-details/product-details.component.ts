@@ -23,5 +23,10 @@ export class ProductDetailsComponent implements OnInit{
     });
   }
 
+  addToCart(product) {
+    this.cartService.addToCart(products);
+    window.alert('Your product has been added to the cart!');
+  }
+
 
 }
