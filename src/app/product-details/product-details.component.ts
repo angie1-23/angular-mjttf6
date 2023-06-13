@@ -23,8 +23,8 @@ export class ProductDetailsComponent implements OnInit{
     });
   }
 
-  addToCart(product) {
-    this.cartService.addToCart(products);
+  addToCart(product:any) {
+    this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
   }
 
